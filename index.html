@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dra. Isabella Oliveira | Realize Centro Clínico</title>
+<meta name="description" content="Realize Centro Clínico em Goiânia: implantes, cirurgia oral e odontologia hospitalar com Dra. Isabella Oliveira (CRO-GO 19393). Agende sua avaliação."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#ebe2c8",
+          "on-tertiary-fixed": "#1f1c0b",
+          "on-tertiary-fixed-variant": "#4c4733",
+          "surface-variant": "#e3e2e0",
+          "inverse-surface": "#2f312f",
+          "on-primary": "#ffffff",
+          "primary-fixed-dim": "#c1c6d7",
+          "on-secondary": "#ffffff",
+          "on-surface": "#1a1c1a",
+          "primary-fixed": "#dde2f3",
+          "on-primary-fixed": "#161c27",
+          "background": "#faf9f6",
+          "on-surface-variant": "#45474c",
+          "outline-variant": "#c6c6cc",
+          "on-tertiary-container": "#8e8770",
+          "outline": "#76777c",
+          "on-background": "#1a1c1a",
+          "surface-dim": "#dbdad7",
+          "secondary-container": "#ffca98",
+          "error": "#ba1a1a",
+          "tertiary": "#0b0800",
+          "on-secondary-container": "#7a532a",
+          "inverse-primary": "#c1c6d7",
+          "surface-container": "#efeeeb",
+          "secondary-fixed-dim": "#f0bd8b",
+          "tertiary-fixed-dim": "#cec6ad",
+          "error-container": "#ffdad6",
+          "secondary-fixed": "#ffdcbd",
+          "surface-container-low": "#f4f3f1",
+          "on-secondary-fixed": "#2c1600",
+          "surface-container-highest": "#e3e2e0",
+          "secondary": "#7d562d",
+          "surface-tint": "#585e6c",
+          "on-primary-container": "#828796",
+          "surface-container-high": "#e9e8e5",
+          "on-tertiary": "#ffffff",
+          "primary-container": "#1a202c",
+          "on-secondary-fixed-variant": "#623f18",
+          "tertiary-container": "#24200f",
+          "on-error": "#ffffff",
+          "surface": "#faf9f6",
+          "surface-bright": "#faf9f6",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed-variant": "#414754",
+          "primary": "#030813",
+          "inverse-on-surface": "#f2f1ee"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "unit": "8px",
+          "gutter": "32px",
+          "section-gap": "120px",
+          "margin-desktop": "80px",
+          "margin-mobile": "24px"
+        },
+        "fontFamily": {
+          "body-lg": ["\"Source Serif 4\""],
+          "label-md": ["Montserrat"],
+          "display-lg": ["Montserrat"],
+          "headline-sm": ["Montserrat"],
+          "headline-md": ["Montserrat"],
+          "body-md": ["\"Source Serif 4\""],
+          "display-lg-mobile": ["Montserrat"]
+        },
+        "fontSize": {
+          "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+          "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-x-hidden">
+<!-- Header: TopNavBar -->
+<nav class="bg-background/90 backdrop-blur-md text-primary font-label-md text-label-md sticky top-0 border-b border-outline-variant/30 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full">
+<div class="font-headline-sm text-headline-sm tracking-tight text-primary">Dra. Isabella Oliveira</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#procedimentos">Procedimentos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#sobre">Sobre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#duvidas">Dúvidas</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#localizacao">Localização</a>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:opacity-90 active:scale-95 transition-all duration-300" href="#agendar">Agendar Avaliação</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="md:hidden text-primary" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+</button>
+</nav>
+<div class="hidden md:hidden flex-col gap-1 bg-background border-b border-outline-variant/30 px-margin-mobile py-4 sticky top-[65px] z-40" id="mobile-menu">
+<a class="py-3 text-on-surface-variant hover:text-primary transition-colors" href="#procedimentos">Procedimentos</a>
+<a class="py-3 text-on-surface-variant hover:text-primary transition-colors" href="#sobre">Sobre</a>
+<a class="py-3 text-on-surface-variant hover:text-primary transition-colors" href="#duvidas">Dúvidas</a>
+<a class="py-3 text-on-surface-variant hover:text-primary transition-colors" href="#localizacao">Localização</a>
+<a class="mt-2 bg-primary text-on-primary text-center px-6 py-3 rounded-DEFAULT font-label-md hover:opacity-90 active:scale-95 transition-all duration-300" href="#agendar">Agendar Avaliação</a>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[600px] md:min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-gradient z-10"></div>
+<img class="w-full h-full object-cover object-center" alt="Interior sereno e boutique da clínica, com luz suave em tons de champanhe e linhas arquitetônicas minimalistas." src="images/hero-clinica.jpg"/>
+</div>
+<div class="relative z-20 w-full px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+O tratamento que você adiou por medo agora tem um lugar seguro.
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+Especializada em cirurgias complexas e implantes, com o acolhimento que você merece. Nossa clínica em Goiânia une alta tecnologia e sensibilidade.
+</p>
+<div class="flex flex-col md:flex-row gap-4">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-DEFAULT font-label-md text-center hover:opacity-90 transition-all active:scale-95" href="#agendar">
+Agendar Avaliação
+</a>
+<a class="border border-outline text-primary px-10 py-5 rounded-DEFAULT font-label-md text-center flex items-center justify-center gap-2 hover:bg-surface-container transition-all active:scale-95" href="https://wa.me/5562998172097" target="_blank" rel="noopener">
+<span class="material-symbols-outlined">chat</span>
+WhatsApp (62) 99817-2097
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Objections / Sobre / Dúvidas Section: Asymmetric Layout -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden" id="sobre">
+<span class="sr-only" id="duvidas"></span>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 mb-12 md:mb-0">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">
+O que te impede de sorrir hoje?
+</h2>
+<div class="aspect-[4/5] bg-surface overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" alt="Retrato profissional da Dra. Isabella Oliveira, dentista, em ambiente clínico minimalista com iluminação calorosa." src="images/dra-isabella.jpg"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 space-y-16 md:mt-24">
+<div class="group border-b border-outline-variant/50 pb-8">
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 flex items-center gap-4">
+<span class="text-tertiary-fixed-dim font-display-lg opacity-30 italic font-normal">01.</span> Dói?
+</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+Utilizamos técnicas de sedação e anestesia humanizada. O controle da dor é nossa prioridade absoluta, garantindo que você não sinta nada além de conforto.
+</p>
+</div>
+<div class="group border-b border-outline-variant/50 pb-8">
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 flex items-center gap-4">
+<span class="text-tertiary-fixed-dim font-display-lg opacity-30 italic font-normal">02.</span> Tempo de recuperação?
+</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+Protocolos otimizados para seu conforto. Nossas técnicas cirúrgicas minimamente invasivas aceleram a cicatrização e reduzem o inchaço pós-operatório.
+</p>
+</div>
+<div class="group border-b border-outline-variant/50 pb-8">
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 flex items-center gap-4">
+<span class="text-tertiary-fixed-dim font-display-lg opacity-30 italic font-normal">03.</span> É seguro?
+</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+Ambiente hospitalar e especialização técnica. Seguimos os mais rigorosos padrões de biossegurança internacionais em cada procedimento.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Procedures: Horizontal Scroll Section -->
+<section class="py-section-gap bg-background" id="procedimentos">
+<div class="px-margin-mobile md:px-margin-desktop mb-12 flex justify-between items-end">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2 block">Transformação</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Do problema à solução</h2>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" id="scroll-prev" type="button" aria-label="Anterior">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" id="scroll-next" type="button" aria-label="Próximo">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto px-margin-mobile md:px-margin-desktop no-scrollbar snap-x" id="procedures-container">
+<div class="min-w-[300px] md:min-w-[450px] snap-center group">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Modelo de implante dentário de precisão sobre fundo em tom champanhe." src="images/implante.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-8">
+<h3 class="text-on-primary font-headline-sm">Perdeu um dente?</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Implantes dentários de alta precisão que devolvem sua função mastigatória e autoestima.</p>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] snap-center group">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Instrumental de cirurgia oral especializada." src="images/siso-placeholder.svg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-8">
+<h3 class="text-on-primary font-headline-sm">Siso ou dor?</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Cirurgia oral especializada para remoções complexas com o mínimo de desconforto.</p>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] snap-center group">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Ambiente hospitalar odontológico moderno e sofisticado." src="images/hospitalar.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-8">
+<h3 class="text-on-primary font-headline-sm">Casos complexos?</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Odontologia hospitalar dedicada para pacientes que necessitam de cuidados específicos.</p>
+</div>
+</div>
+</section>
+<!-- Credential Section -->
+<section class="bg-surface-container py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter uppercase opacity-90 leading-none">
+Segurança <span class="text-secondary italic font-body-lg normal-case lowercase tracking-normal">registrada</span>
+</h2>
+</div>
+<div class="flex flex-col items-center md:items-end">
+<div class="h-1 w-32 bg-secondary mb-4"></div>
+<p class="font-headline-sm text-headline-sm text-primary">Dra. Isabella Oliveira</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CRO-GO 19393</p>
+</div>
+</div>
+</section>
+<!-- Multi-step Form Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background" id="agendar">
+<div class="max-w-4xl mx-auto bg-surface p-8 md:p-16 border border-outline-variant/30 rounded-lg shadow-sm">
+<div class="mb-12 text-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Inicie seu agendamento</h2>
+<div class="w-full h-1 bg-surface-container relative mt-8">
+<div class="absolute left-0 top-0 h-full bg-secondary transition-all duration-500 w-1/3" id="form-progress"></div>
+</div>
+<div class="flex justify-between mt-4">
+<span class="text-xs font-label-md text-secondary uppercase" id="progress-label-1">Informações</span>
+<span class="text-xs font-label-md text-on-surface-variant uppercase" id="progress-label-2">Procedimento</span>
+<span class="text-xs font-label-md text-on-surface-variant uppercase" id="progress-label-3">Período</span>
+</div>
+</div>
+<form id="scheduling-form">
+<div class="relative overflow-hidden min-h-[350px]">
+<div class="step-transition" id="step-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-xs font-semibold text-secondary uppercase tracking-wider" for="input-nome">Nome Completo</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 py-4 text-body-lg font-body-lg" id="input-nome" placeholder="Seu nome" type="text" required/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-semibold text-secondary uppercase tracking-wider" for="input-whatsapp">WhatsApp</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 py-4 text-body-lg font-body-lg" id="input-whatsapp" placeholder="(62) 00000-0000" type="tel" required/>
+</div>
+</div>
+<div class="mt-12 flex justify-end">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-DEFAULT font-label-md hover:opacity-90 active:scale-95 transition-all" data-next="2" type="button">Próximo Passo</button>
+</div>
+</div>
+<div class="step-transition absolute inset-0" id="step-2" style="transform: translateX(100%); opacity: 0; pointer-events: none;">
+<div class="space-y-6">
+<label class="block text-xs font-semibold text-secondary uppercase tracking-wider mb-4">Qual procedimento você procura?</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex items-center gap-4 p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="text-secondary focus:ring-secondary" name="proc" type="radio" value="Implante Dentário"/>
+<span class="font-body-md">Implante Dentário</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="text-secondary focus:ring-secondary" name="proc" type="radio" value="Remoção de Siso"/>
+<span class="font-body-md">Remoção de Siso</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="text-secondary focus:ring-secondary" name="proc" type="radio" value="Avaliação Geral"/>
+<span class="font-body-md">Avaliação Geral</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="text-secondary focus:ring-secondary" name="proc" type="radio" value="Outros / Complexos"/>
+<span class="font-body-md">Outros / Complexos</span>
+</label>
+</div>
+</div>
+<div class="mt-12 flex justify-between">
+<button class="text-primary font-label-md hover:underline" data-next="1" type="button">Voltar</button>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-DEFAULT font-label-md hover:opacity-90 active:scale-95 transition-all" data-next="3" type="button">Próximo Passo</button>
+</div>
+</div>
+<div class="step-transition absolute inset-0" id="step-3" style="transform: translateX(100%); opacity: 0; pointer-events: none;">
+<div class="space-y-6">
+<label class="block text-xs font-semibold text-secondary uppercase tracking-wider mb-4">Preferência de Período</label>
+<div class="grid grid-cols-3 gap-4" id="period-options">
+<button class="period-option p-6 border border-outline-variant text-center hover:bg-surface-container transition-colors group" data-period="Manhã" type="button">
+<span class="material-symbols-outlined block text-3xl mb-2 text-on-surface-variant group-hover:text-secondary">light_mode</span>
+<span class="font-label-md">Manhã</span>
+</button>
+<button class="period-option p-6 border border-outline-variant text-center hover:bg-surface-container transition-colors group" data-period="Tarde" type="button">
+<span class="material-symbols-outlined block text-3xl mb-2 text-on-surface-variant group-hover:text-secondary">sunny</span>
+<span class="font-label-md">Tarde</span>
+</button>
+<button class="period-option p-6 border border-outline-variant text-center hover:bg-surface-container transition-colors group" data-period="Noite" type="button">
+<span class="material-symbols-outlined block text-3xl mb-2 text-on-surface-variant group-hover:text-secondary">bedtime</span>
+<span class="font-label-md">Noite</span>
+</button>
+</div>
+<p class="text-sm text-on-surface-variant hidden" id="form-feedback"></p>
+</div>
+<div class="mt-12 flex justify-between">
+<button class="text-primary font-label-md hover:underline" data-next="2" type="button">Voltar</button>
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-DEFAULT font-label-md hover:opacity-90 active:scale-95 transition-all" type="submit">Finalizar Agendamento</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="localizacao">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-gutter items-center">
+<div class="w-full md:w-1/2 space-y-8">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2 block">Onde estamos</span>
+<h2 class="font-headline-md text-headline-md text-primary">Realize Centro Clínico</h2>
+</div>
+<div class="space-y-4">
+<p class="font-body-lg text-body-lg text-on-surface-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">location_on</span>
+<span>Avenida T-1, N° 1234, Setor Bueno,<br/>Goiânia - GO, 74210-000</span>
+</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+Localização privilegiada com estacionamento próprio e fácil acesso para sua total comodidade.
+</p>
+</div>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-5 rounded-DEFAULT font-label-md hover:opacity-90 transition-all active:scale-95 shadow-sm" href="https://www.waze.com/ul?q=Avenida%20T-1%201234%20Goiania" target="_blank" rel="noopener">
+<span class="material-symbols-outlined">directions_car</span>
+Abrir no Waze
+</a>
+</div>
+<div class="w-full md:w-1/2 aspect-video bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant/30">
+<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Avenida%20T-1%2C%201234%2C%20Setor%20Bueno%2C%20Goi%C3%A2nia%20-%20GO%2C%2074210-000&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Mapa de localização da Realize Centro Clínico"></iframe>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container text-on-surface font-body-md w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div class="max-w-sm">
+<div class="font-headline-sm text-headline-sm text-primary mb-6">Dra. Isabella Oliveira</div>
+<p class="text-on-surface-variant mb-8 font-body-md">
+Excelência em cirurgia e reabilitação oral. Um novo conceito de cuidado e acolhimento para o seu sorriso em Goiânia.
+</p>
+<div class="space-y-2 text-on-tertiary-fixed-variant">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Goiânia - GO</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> (62) 99817-2097</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-12 w-full md:w-auto mt-12 md:mt-0">
+<div>
+<h4 class="font-label-md text-primary mb-6 uppercase tracking-widest text-xs">Menu</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors" href="#">Início</a></li>
+<li><a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors" href="#procedimentos">Procedimentos</a></li>
+<li><a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors" href="#sobre">Dra. Isabella</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-6 uppercase tracking-widest text-xs">Social</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors" href="#">Instagram</a></li>
+<li><a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors" href="https://wa.me/5562998172097" target="_blank" rel="noopener">WhatsApp</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full md:w-64 mt-12 md:mt-0 pt-12 md:pt-0 border-t border-outline-variant md:border-0">
+<p class="text-xs text-on-tertiary-fixed-variant leading-relaxed">
+© 2026 Realize Centro Clínico • CRO-GO 19393.<br/>
+Design by <span class="font-semibold text-primary">Evodev Studio</span>.
+</p>
+</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
