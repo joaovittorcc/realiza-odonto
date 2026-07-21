@@ -50,7 +50,32 @@ function goToStep(step) {
   });
 }
 
+const formFeedback = document.getElementById('form-feedback');
+
+function showFeedback(message) {
+  formFeedback.textContent = message;
+  formFeedback.classList.remove('hidden');
+}
+
+function hideFeedback() {
+  formFeedback.classList.add('hidden');
+}
+
+document.getElementById('step1-next-btn').addEventListener('click', () => {
+  const nome = document.getElementById('input-nome').value.trim();
+  const whatsapp = document.getElementById('input-whatsapp').value.trim();
+
+  if (!nome || !whatsapp) {
+    showFeedback('Preencha nome e WhatsApp antes de continuar.');
+    return;
+  }
+
+  hideFeedback();
+  goToStep(2);
+});
+
 document.querySelectorAll('[data-next]').forEach((button) => {
+  if (button.id === 'step1-next-btn') return;
   button.addEventListener('click', () => goToStep(Number(button.dataset.next)));
 });
 
@@ -95,11 +120,8 @@ document.getElementById('scheduling-form').addEventListener('submit', function (
   const procedimento = procedimentoInput ? procedimentoInput.value : 'não informado';
   const periodo = selectedPeriod || 'não informado';
 
-  const feedback = document.getElementById('form-feedback');
-
   if (!nome || !whatsapp) {
-    feedback.textContent = 'Preencha nome e WhatsApp antes de finalizar.';
-    feedback.classList.remove('hidden');
+    showFeedback('Preencha nome e WhatsApp antes de finalizar.');
     goToStep(1);
     return;
   }
@@ -114,6 +136,5 @@ document.getElementById('scheduling-form').addEventListener('submit', function (
   const link = `https://wa.me/5562998172097?text=${encodeURIComponent(mensagem)}`;
   window.open(link, '_blank', 'noopener');
 
-  feedback.textContent = 'Abrindo o WhatsApp para confirmar seu agendamento...';
-  feedback.classList.remove('hidden');
+  showFeedback('Abrindo o WhatsApp para confirmar seu agendamento...');
 });
