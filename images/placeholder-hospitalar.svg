@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f3f1"/>
+      <stop offset="100%" stop-color="#ebe2c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+
+  <circle cx="450" cy="560" r="270" fill="#7d562d" opacity="0.07"/>
+  <circle cx="450" cy="560" r="190" fill="none" stroke="#7d562d" stroke-opacity="0.18" stroke-width="1.5"/>
+
+  <path d="M110 110 H230 M110 110 V230" stroke="#030813" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M790 1090 H670 M790 1090 V970" stroke="#030813" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- tooth + care cross -->
+  <g transform="translate(450 560)">
+    <path d="M0 -150
+             C 78 -150 118 -104 118 -46
+             C 118 24 92 78 70 150
+             C 58 190 40 208 22 208
+             C 4 208 -4 176 -10 138
+             C -16 100 -26 92 -38 92
+             C -50 92 -60 100 -66 138
+             C -72 176 -80 208 -98 208
+             C -116 208 -134 190 -146 150
+             C -168 78 -118 -150 0 -150 Z"
+          fill="none" stroke="#030813" stroke-width="10" stroke-linejoin="round"/>
+    <!-- care cross badge -->
+    <circle cx="10" cy="-30" r="46" fill="#faf9f6" stroke="#7d562d" stroke-width="4"/>
+    <path d="M10 -50 V-10 M-10 -30 H30" stroke="#7d562d" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="110" y="1000" font-family="Montserrat, sans-serif" font-size="22" letter-spacing="3" fill="#7d562d" opacity="0.7">HOSPITALAR</text>
+</svg>

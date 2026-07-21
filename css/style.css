@@ -12,7 +12,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-gradient {
-  background: linear-gradient(to right, rgba(250, 249, 246, 0.9) 30%, rgba(250, 249, 246, 0) 100%);
+  background: radial-gradient(ellipse 70% 65% at center, rgba(250, 249, 246, 0.92) 0%, rgba(250, 249, 246, 0.72) 55%, rgba(250, 249, 246, 0.35) 100%);
 }
 .period-option.is-selected {
   border-color: #7d562d;

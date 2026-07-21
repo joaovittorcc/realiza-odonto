@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f3f1"/>
+      <stop offset="100%" stop-color="#ebe2c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+
+  <circle cx="450" cy="560" r="270" fill="#7d562d" opacity="0.07"/>
+  <circle cx="450" cy="560" r="190" fill="none" stroke="#7d562d" stroke-opacity="0.18" stroke-width="1.5"/>
+
+  <path d="M110 110 H230 M110 110 V230" stroke="#030813" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M790 1090 H670 M790 1090 V970" stroke="#030813" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- tooth + implant screw -->
+  <g transform="translate(450 520)">
+    <path d="M0 -150
+             C 78 -150 118 -104 118 -46
+             C 118 24 92 78 70 150
+             C 62 178 50 194 36 198
+             L 36 40 L -36 40 L -36 198
+             C -50 194 -62 178 -70 150
+             C -92 78 -118 24 -118 -46
+             C -118 -104 -78 -150 0 -150 Z"
+          fill="none" stroke="#030813" stroke-width="10" stroke-linejoin="round"/>
+    <!-- implant post -->
+    <rect x="-14" y="40" width="28" height="130" fill="none" stroke="#7d562d" stroke-width="8"/>
+    <path d="M-14 62 H14 M-14 84 H14 M-14 106 H14 M-14 128 H14" stroke="#7d562d" stroke-width="6"/>
+  </g>
+
+  <text x="110" y="1000" font-family="Montserrat, sans-serif" font-size="22" letter-spacing="3" fill="#7d562d" opacity="0.7">IMPLANTE</text>
+</svg>
