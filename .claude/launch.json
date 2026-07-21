@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-site-python",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8743"],
+      "port": 8743
+    },
+    {
+      "name": "static-site-serve",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", ".", "-l", "5000"],
+      "port": 5000
+    }
+  ]
+}
